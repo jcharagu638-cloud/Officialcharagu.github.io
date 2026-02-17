@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -14,24 +13,30 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  color: #e0e0ff;
+  color: #99cfff; /* Softer neon text */
 }
 
 /* CONTAINER */
 .container {
   width: 100%;
   max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures everything is centered */
 }
 
 /* PROFILE IMAGE */
 .profile-img {
-  width: 110px;
-  height: 110px;
+  width: 120px; /* slightly bigger */
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid #00f0ff; /* neon border */
-  box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+  border: 3px solid #33dfff; /* softer neon border */
+  box-shadow: 0 0 10px #33dfff, 0 0 20px #33dfff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* ensures perfect center */
 }
 
 /* NAME */
@@ -39,41 +44,45 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #00f0ff;
-  text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+  color: #33dfff; /* toned-down neon */
+  text-shadow: 0 0 3px #33dfff, 0 0 6px #33dfff;
 }
 
 /* BIO */
 .bio {
   font-size: 0.95rem;
   margin-bottom: 25px;
-  opacity: 0.9;
-  color: #b0cfff;
+  opacity: 0.85;
+  color: #80bfff; /* softer neon blue */
 }
 
 /* SOCIAL ICON LINKS */
 .social-icons {
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center; /* center social links */
 }
 
 .social-icons a {
   margin: 0 10px;
   text-decoration: none;
-  color: #00f0ff;
+  color: #33dfff;
   font-weight: 600;
   font-size: 0.9rem;
   transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-  text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+  text-shadow: 0 0 3px #33dfff, 0 0 6px #33dfff;
 }
 
 /* LINK BUTTONS */
 .link-btn {
   display: block;
+  width: 100%;
+  max-width: 300px; /* keep buttons uniform */
   background: #000022;
-  color: #00f0ff;
+  color: #33dfff; /* softer neon for button text */
   text-decoration: none;
   padding: 15px;
   border-radius: 30px;
@@ -81,11 +90,14 @@ h1 {
   font-weight: 600;
   font-size: 1rem;
   transition: 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+  box-shadow: 0 0 5px #33dfff, 0 0 10px #33dfff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; /* ensures button is centered */
 }
 
 .link-btn:hover {
   background: #001144;
   transform: translateY(-3px);
-  box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff;
+  box-shadow: 0 0 12px #33dfff, 0 0 25px #33dfff, 0 0 40px #33dfff;
 }
